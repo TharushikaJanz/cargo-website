@@ -54,7 +54,7 @@ function Header() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <AppBar position="static" padding='4px' style={{ background: "#FFF", boxShadow: "none"}}>
+    <AppBar position="static" style={{ background: "#FFF", boxShadow: "none", padding: '10px'}}>
       <Toolbar style={{ justifyContent: "space-between", flexWrap: "wrap" }}>
         <Typography
           variant="h6"

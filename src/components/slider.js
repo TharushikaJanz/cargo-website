@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Box, Typography, Button, Paper } from "@mui/material";
 import sliderImage1 from "../sliderImage1.jpg";
 import sliderImage2 from "../sliderImage2.jpg";
-import CustomSliderNav from "./customSliderNav";
+import CustomSliderNav from "./sub-components/customSliderNav";
 
 const slidesData = [
   {
@@ -50,7 +50,7 @@ const SliderComponent = () => {
       {slidesData.map((slide, index) => (
         <Box
           key={index}
-          sx={{ display: "flex", width: "100%", height: "600px" }}
+          sx={{ display: "flex", width: "100%", height: "600px"}}
         >
           {/* Text content on the left */}
           <Box
@@ -145,9 +145,9 @@ const SliderComponent = () => {
             onNext={handleNext}
             sx={{
               position: "absolute",
-              bottom: "20px", // Adjust based on your layout
-              right: "20px", // Adjust based on your layout
-              backgroundColor: "yellow", // Use theme color or hex color
+              bottom: "20px", 
+              right: "20px",
+              backgroundColor: "yellow", 
             }}
           />
           {/* Image on the right */}
