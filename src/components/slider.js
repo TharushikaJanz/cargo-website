@@ -77,6 +77,9 @@ const SliderComponent = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 marginBottom: "5px",
+                borderLeft: '4px solid #f9bf04',
+                padding: '6px',
+                borderRadius: '0',
               }}
             >
               <Typography
@@ -85,6 +88,7 @@ const SliderComponent = () => {
                   fontWeight: "bold",
                   letterSpacing: "5px",
                   fontSize: "16px",
+                  marginLeft: "10px"
                 }}
               >
                 LOGISTIC
