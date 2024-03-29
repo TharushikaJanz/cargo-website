@@ -22,7 +22,7 @@ const statsData = [
 
 const StatsSection = () => {
     return (
-      <Container maxWidth="lg" sx={{ py: 4, alignContent: "center"}}>
+      <Container maxWidth="lg" sx={{ py: 4, alignContent: "center", marginY: '4rem'}}>
         <Grid container spacing={2} justifyContent="space-around" alignItems="center">
           {statsData.map((item, index) => (
             <Grid item key={index} xs={12} sm={6} md={3}>
@@ -62,7 +62,7 @@ const StatsSection = () => {
                     component="p"
                     sx={{
                       fontWeight: "bold",
-                      color: "darkblue",
+                      color: "#0e2355 ",
                       fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
                       lineHeight: 1,
                     }}
@@ -74,7 +74,7 @@ const StatsSection = () => {
                     variant="body1"
                     sx={{
                       fontWeight: "bold",
-                      color: "darkblue",
+                      color: "#0e2355  ",
                       textAlign: "left",
                       mt: { xs: 1, sm: 0 },
                       ml: { sm: 2 },

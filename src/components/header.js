@@ -14,7 +14,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const StyledButton = (props) => {
   const activeStyle = {
-    borderColor: "transparent transparent transparent #FF6F00",
+    borderColor: "transparent transparent transparent #f9bf04",
     borderWidth: "0 0 0 3px",
     borderRadius: 0,
     borderStyle: "solid",
@@ -24,10 +24,9 @@ const StyledButton = (props) => {
   const containedStyle = {
     ...props.style,
     borderRadius: 0,
-    color: "#fff", // Ensure text color for contained buttons is white
+    color: "#fff", 
   };
 
-  // Apply the containedStyle if variant is 'contained', otherwise apply the default or active styles
   const buttonStyle =
     props.variant === "contained"
       ? containedStyle
@@ -56,12 +55,15 @@ function Header() {
   return (
     <AppBar position="static" style={{ background: "#FFF", boxShadow: "none", padding: '10px'}}>
       <Toolbar style={{ justifyContent: "space-between", flexWrap: "wrap" }}>
-        <Typography
-          variant="h6"
-          style={{ color: "#FF6F00", fontWeight: "bold", flexGrow: 1 }}
+        <Box p={'15px'} sx={{backgroundColor: '#000'}}>
+           <Typography
+          variant="h5"
+          style={{ color: "#f9bf04", fontWeight: "bold", flexGrow: 1}}
         >
-          CargoTon
+          CargoTon Logo
         </Typography>
+        </Box>
+       
         {isMobile ? (
           <Box>
             <IconButton aria-label="Options" size="large">
@@ -107,7 +109,7 @@ function Header() {
 
             <StyledButton
               variant="contained"
-              style={{ backgroundColor: "#FF6F00" }}
+              style={{ backgroundColor: "#f9bf04" }}
             >
               Get a Quote
             </StyledButton>

@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Box, Typography, Button, Paper } from "@mui/material";
-import sliderImage1 from "../sliderImage1.jpg";
-import sliderImage2 from "../sliderImage2.jpg";
+import sliderImage1 from "../assets/sliderImage1.jpg";
+import sliderImage2 from "../assets/sliderImage2.jpg";
 import CustomSliderNav from "./sub-components/customSliderNav";
 
 const slidesData = [
@@ -29,7 +29,7 @@ const SliderComponent = () => {
   const totalSlides = slidesData.length;
 
   const settings = {
-    dots: false, // Disable default dots
+    dots: false,
     infinite: true,
     speed: 5000,
     slidesToShow: 1,
@@ -95,17 +95,17 @@ const SliderComponent = () => {
               component="h2"
               sx={{
                 fontWeight: "bold",
-                color: "#000",
+                color: "#171717",
               }}
             >
               Best Shipping
             </Typography>
             <Typography
-              variant="h4"
+              variant="h3"
               component="h2"
               sx={{
                 fontWeight: "bold",
-                color: "#FF6F00",
+                color: "#f9bf04",
                 marginBottom: "20px",
               }}
             >
@@ -124,10 +124,12 @@ const SliderComponent = () => {
             <Button
               variant="contained"
               sx={{
-                backgroundColor: "#FF6F00",
+                backgroundColor: "#f9bf04",
                 color: "#fff",
                 padding: "10px 30px",
-                textTransform: "none",
+                textTransform: "upper",
+                letterSpacing: "2.5px",
+                fontWeight: "bold",
                 boxShadow: "none",
                 borderRadius: 0,
                 "&:hover": {

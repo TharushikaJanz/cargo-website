@@ -7,14 +7,13 @@ const ServicesSection = () => {
     <Container maxWidth="lg" sx={{ padding: "2rem 0" }}>
       {/* Title and subtitle */}
       <Box sx={{ marginBottom: "2rem", textAlign: "center" }}>
-        <Typography variant="overline" display="block" gutterBottom>
+        <Typography variant="overline" display="block" gutterBottom fontWeight={'600'} color={'#8dbb44 '}>
           Real Solution, Real Fast!
         </Typography>
-        <Typography variant="h3" gutterBottom>
+        <Typography variant="h4" gutterBottom fontWeight={'bold'}>
           Best Global Logistics Solutions.
         </Typography>
       </Box>
-      {/* Slider component with added padding for spacing */}
       <ServicesSlider />
       
     </Container>

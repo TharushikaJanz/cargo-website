@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Paper } from "@mui/material";
-import Img1 from "../../coworkers.jpeg";
-import Img2 from "../../banner.jpeg";
+import Img1 from "../../assets/coworkers.jpeg";
+import Img2 from "../../assets/banner.jpeg";
 
 const OverlappingImages = () => {
   return (
@@ -57,7 +57,7 @@ const OverlappingImages = () => {
           position: "absolute",
           bottom: "-40px", 
           right: "-80px", 
-          bgcolor: "orange",
+          bgcolor: "#ff7c45",
           color: "white",
           p: "1rem 1rem",
           borderRadius: "0px",

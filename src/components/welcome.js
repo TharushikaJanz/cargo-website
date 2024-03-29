@@ -26,7 +26,7 @@ const WelcomeSection = () => {
             <Typography
               variant="h4"
               component="h2"
-              sx={{ fontWeight: "bold", color: "#FF6F00" }}
+              sx={{ fontWeight: "bold", color: "#171717" }}
             >
               TransMax Logistics
             </Typography>
@@ -35,7 +35,7 @@ const WelcomeSection = () => {
               component="h2"
               sx={{
                 fontWeight: "bold",
-                color: "#FF6F00",
+                color: "#ff7c45",
                 marginBottom: "2rem",
               }}
             >
@@ -43,7 +43,7 @@ const WelcomeSection = () => {
             </Typography>
             <Typography
               variant="body1"
-              sx={{ marginBottom: "1rem", color: "#666" }}
+              sx={{ marginBottom: "1rem", color: "#014b5b " }}
             >
               Transmax is the world's driving worldwide coordinations supplier —
               we uphold industry and exchange the worldwide trade of merchandise
@@ -60,8 +60,8 @@ const WelcomeSection = () => {
             <Button
               variant="contained"
               sx={{
-                backgroundColor: "#FF6F00",
-                color: "#fff",
+                backgroundColor: "#ccc",
+                color: "#014b5b ",
                 "&:hover": { backgroundColor: "#cc5200" },
                 borderRadius: 0,
               }}

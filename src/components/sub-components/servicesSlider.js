@@ -11,8 +11,8 @@ import {
   CardContent,
 } from "@mui/material";
 
-import airFreightImage from "../../frieghtServices.webp";
-import droneServicesImage from "../../droneServices.jpg";
+import airFreightImage from "../../assets/frieghtServices.webp";
+import droneServicesImage from "../../assets/droneServices.jpg";
 
 const servicesData = [
   {
