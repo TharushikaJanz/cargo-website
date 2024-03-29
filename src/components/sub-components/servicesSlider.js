@@ -13,6 +13,7 @@ import {
 
 import airFreightImage from "../../assets/frieghtServices.webp";
 import droneServicesImage from "../../assets/droneServices.jpg";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const servicesData = [
   {
@@ -78,74 +79,96 @@ const ServicesSlider = () => {
     ],
   };
 
-  
-
   return (
-     <Box sx={{ position: 'relative', width: '100%' }}>
-    <Slider {...settings} >
-      {servicesData.map((service, index) => (
-        <Card
-          key={index}
-          elevation={3}
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "start",
-            alignItems: "center",
-            maxWidth: 550,
-            height: 200,
-            boxShadow: 3,
-            borderRadius:0,
-            transition: "transform .2s",
-            "&:hover": {
-              transform: "scale(1.05)",
-            },
-            ".slick-slide &": {
+    <Box sx={{ position: "relative", width: "100%" }}>
+      <Slider {...settings}>
+        {servicesData.map((service, index) => (
+          <Card
+            key={index}
+            elevation={3}
+            sx={{
               display: "flex",
-              flexDirection: "column",
-            },
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
-            <CardMedia
-              component="img"
-              image={service.imageUrl}
-              alt={service.title}
-              sx={{
-                width: 200,
-                height: 200,
-              }}
-            />
-            <CardContent
-              sx={{
+              flexDirection: "row",
+              justifyContent: "start",
+              alignItems: "center",
+              maxWidth: 550,
+              height: 200,
+              boxShadow: 3,
+              borderRadius: 0,
+              transition: "transform .2s",
+              "&:hover": {
+                transform: "scale(1.05)",
+              },
+              ".slick-slide &": {
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                sx={{ fontWeight: "bold" }}
+              },
+            }}
+          >
+            <Box sx={{ display: "flex", flexDirection: "row" }}>
+              <CardMedia
+                component="img"
+                image={service.imageUrl}
+                alt={service.title}
+                sx={{
+                  width: 200,
+                  height: 200,
+                }}
+              />
+              <CardContent
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
               >
-                {service.title}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {service.description}
-              </Typography>
-              <Button
-                variant="contained"
-                sx={{ width: "fit-content", marginTop: "auto" }}
-              >
-                {service.action}
-              </Button>
-            </CardContent>
-          </Box>
-        </Card>
-      ))}
-    </Slider>
-    <Typography variant="subtitle1" marginTop={'40px'}>
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ fontWeight: "bold" }}
+                >
+                  {service.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {service.description}
+                </Typography>
+                <Button
+                  variant="contained"
+                  startIcon={
+                    <KeyboardArrowRightIcon
+                      sx={{
+                        fontSize: "16px",
+                        fontWeight: "bold",
+                        backgroundColor: "#000",
+                        color: "#fff",
+                        borderRadius: "25px"
+                      }}
+                    />
+                  }
+                  sx={{
+                    backgroundColor: "transparent",
+                    color: "#000",
+                    padding: "6px 16px",
+                    textTransform: "none",
+                    borderRadius: "0",
+                    fontSize: "inherit",
+                    width: "fit-content",
+                    fontWeight: "bold",
+                    marginTop: "auto",
+                    ":hover": {
+                      backgroundColor: "#ccc",
+                    },
+                  }}
+                >
+                  Read More
+                </Button>
+              </CardContent>
+            </Box>
+          </Card>
+        ))}
+      </Slider>
+      <Typography variant="subtitle1" marginTop={"40px"}>
         Logistics & Transport Solutions Saves Your Time. Finds Your Solutions
       </Typography>
     </Box>

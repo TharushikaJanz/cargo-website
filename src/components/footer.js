@@ -51,7 +51,13 @@ const CustomerServiceLinks = ({ links }) => (
       Customer Service
     </Typography>
     {links.map((link, index) => (
-      <Link key={index} href={link.href} color="#a9b6ab" underline="hover" sx={{ display: 'block', mt: index > 0 ? 1 : 0 }}>
+      <Link
+        key={index}
+        href={link.href}
+        color="#a9b6ab"
+        underline="hover"
+        sx={{ display: "block", mt: index > 0 ? 1 : 0 }}
+      >
         {link.text}
       </Link>
     ))}
@@ -68,7 +74,7 @@ const ImageBox = ({ images }) => (
         key={index}
         src={image.src}
         alt={image.alt}
-        style={{ width: "30%", height: "auto", margin: "0.5%" }} // Adjust margin as needed
+        style={{ width: "30%", height: "auto", margin: "0.5%" }}
       />
     ))}
   </Box>
@@ -180,7 +186,7 @@ const FooterSection = () => {
                 </Grid>
 
                 <CustomerServiceLinks links={linkData} />
-               
+
                 <Grid item xs={6} md={3}>
                   <Typography
                     variant="h6"
@@ -229,10 +235,13 @@ const FooterSection = () => {
                     marginLeft: "5rem",
                     color: "#fff",
                     bgcolor: "#f9bf04",
-                    borderRadius: "50%",
+                    borderRadius: "0",
                     p: "10px",
                   }}
                   aria-label="back to top"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
                 >
                   <ArrowUpwardIcon />
                 </IconButton>

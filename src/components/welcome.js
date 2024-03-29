@@ -35,12 +35,13 @@ const WelcomeSection = () => {
               component="h2"
               sx={{
                 fontWeight: "bold",
-                color: "#ff7c45",
                 marginBottom: "2rem",
               }}
             >
-              Around the World
+              Around
+              <span style={{ color: "#ff7c45" }}> the World</span>
             </Typography>
+
             <Typography
               variant="body1"
               sx={{ marginBottom: "1rem", color: "#014b5b " }}
@@ -61,8 +62,12 @@ const WelcomeSection = () => {
               variant="contained"
               sx={{
                 backgroundColor: "#ccc",
-                color: "#014b5b ",
-                "&:hover": { backgroundColor: "#cc5200" },
+                color: "#014b5b",
+                fontWeight: "bold",
+                "&:hover": {
+                  backgroundColor: "#cc5200",
+                  color: "#fff",
+                },
                 borderRadius: 0,
               }}
             >
