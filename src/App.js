@@ -1,3 +1,4 @@
+import LogoBar from './components/clientLogos';
 import Header from './components/header';
 import ServicesSection from './components/services';
 import SliderComponent from './components/slider';
@@ -14,6 +15,7 @@ function App() {
     <ServicesSection/>
     <StatsSection/>
     <TestamonialSection/>
+    <LogoBar/>
     </div>
      
   );
