@@ -22,7 +22,7 @@ const statsData = [
 
 const StatsSection = () => {
     return (
-      <Container maxWidth="lg" sx={{ py: 4, alignContent: "center", marginY: '8rem'}}>
+      <Container maxWidth="lg" sx={{ py: 4, alignContent: "center", marginY: '6rem'}}>
         <Grid container spacing={2} justifyContent="space-around" alignItems="center">
           {statsData.map((item, index) => (
             <Grid item key={index} xs={12} sm={6} md={3}>

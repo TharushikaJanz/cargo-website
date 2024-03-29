@@ -18,7 +18,7 @@ const LogoBar = () => {
     <Paper
       elevation={0} 
       sx={{ 
-        paddingY: 12,
+        paddingY: 10,
         paddingX: 10,
         margin: 'auto', 
         maxWidth: '100%',

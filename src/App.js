@@ -1,5 +1,7 @@
 import LogoBar from './components/clientLogos';
+import FooterSection from './components/footer';
 import Header from './components/header';
+import LatestNews from './components/news';
 import ServicesSection from './components/services';
 import SliderComponent from './components/slider';
 import StatsSection from './components/statistics';
@@ -16,6 +18,8 @@ function App() {
     <StatsSection/>
     <TestamonialSection/>
     <LogoBar/>
+    <LatestNews/>
+    <FooterSection/>
     </div>
      
   );
